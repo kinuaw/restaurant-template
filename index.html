@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Restaurant Website Template (HTML &amp; CSS) | Kineab Studios</title>
+<meta name="description" content="A modern, mobile-friendly one-page restaurant website template in plain HTML and CSS. Edit text, colors and photos in minutes. No coding skills needed. Instant download.">
+<meta property="og:title" content="Modern Restaurant Website Template (HTML & CSS)">
+<meta property="og:description" content="Mobile-friendly one-page restaurant website in plain HTML and CSS. Instant download.">
+<meta property="og:image" content="images/cover.jpg">
+<script>!function(w,d,s,u,n,a,b){if(w[n])return;a=w[n]={q:[],t:+new Date,s:[],o:u,track:function(){a.q.push([+new Date].concat([].slice.call(arguments)))},setScope:function(){a.s=[].slice.call(arguments).filter(function(x){return typeof x==="string"});a.q.push([+new Date,"setScope"].concat(a.s))},scope:function(){var c=[].slice.call(arguments);return{track:function(){a.q.push([+new Date].concat([].slice.call(arguments)).concat([{__scope:c}]))}}}};b=d.createElement(s);b.async=1;b.src=u+"/s.js";d.getElementsByTagName(s)[0].parentNode.insertBefore(b,d.getElementsByTagName(s)[0])}(window,document,"script","https://t.whop.tw","whop");whop.setScope("biz_RjDtpNZxarw9rr");whop.track("page");</script>
+<style>
+:root{--bg:#14100d;--soft:#1c1713;--card:#241d18;--text:#f3ebe2;--muted:#b3a597;--accent:#c8793a;--accent2:#e0a458;--line:rgba(243,235,226,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:.75rem;color:var(--accent2);font-weight:700;margin-bottom:14px}
+.btn{display:inline-block;background:var(--accent);color:#1a110a;padding:15px 32px;border-radius:999px;font-weight:800;font-size:1.02rem;border:2px solid var(--accent);transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--accent2);border-color:var(--accent2)}
+.btn-small{padding:9px 20px;font-size:.88rem}
+.nav{position:sticky;top:0;z-index:10;background:rgba(20,16,13,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:1.25rem}
+.brand span{color:var(--accent)}
+.hero{padding:72px 0 56px;background:radial-gradient(circle at 80% 20%,rgba(200,121,58,.22),transparent 55%),var(--bg)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.5px;margin-bottom:18px}
+h1 em{font-style:normal;color:var(--accent)}
+.lead{color:var(--muted);font-size:1.15rem;margin-bottom:28px;max-width:470px}
+.buy{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.price{font-family:Georgia,serif;font-size:2rem;font-weight:700}
+.price small{display:block;font-family:system-ui,sans-serif;font-size:.75rem;color:var(--muted);font-weight:400}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.85rem;color:#d9cbbd}
+.shot{border-radius:16px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 0 1px var(--line)}
+section{padding:80px 0}
+.soft{background:var(--soft)}
+.head{text-align:center;max-width:640px;margin:0 auto 44px}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:12px}
+.head p{color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.feat h3{font-size:1.1rem;margin-bottom:8px;color:var(--accent2)}
+.feat p{color:var(--muted);font-size:.95rem}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.gallery .shot:last-child{grid-column:1/-1}
+.for{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.for ul li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+.for ul li strong{color:var(--text)}
+.faq{max-width:720px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:600;list-style:none}
+.faq summary::after{content:"+";float:right;color:var(--accent2)}
+.faq details[open] summary::after{content:"\2013"}
+.faq p{color:var(--muted);margin-top:10px}
+.cta{text-align:center;background:radial-gradient(circle at 50% 0%,rgba(200,121,58,.25),transparent 60%),var(--soft)}
+.cta p{color:var(--muted);margin:0 auto 26px;max-width:480px}
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media(max-width:860px){
+  .hero .wrap,.for{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero{padding-top:44px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">Kineab <span>Studios</span></a>
+    <a href="https://kineabw.gumroad.com/l/restaurant-website-templates" class="btn btn-small">Buy now</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">HTML &amp; CSS Website Template</p>
+        <h1>A modern website for your <em>restaurant</em>, ready today.</h1>
+        <p class="lead">A clean, mobile-friendly one-page template. Change the text, colors and photos in minutes. No coding skills needed.</p>
+        <div class="buy">
+          <a href="https://kineabw.gumroad.com/l/restaurant-website-templates" class="btn">Buy now</a>
+          <div class="price">$15<small>One-time payment &middot; Instant download</small></div>
+        </div>
+        <div class="chips"><span>Mobile-friendly</span><span>Menu tabs</span><span>Booking form layout</span><span>Plain HTML &amp; CSS</span></div>
+      </div>
+      <div class="shot"><img src="images/cover.jpg" alt="Modern restaurant website template shown on desktop and mobile" width="1280" height="720"></div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">What's inside</p>
+        <h2>Everything a restaurant site needs.</h2>
+        <p>One page, six sections, and a simple guide so you can make it yours.</p>
+      </div>
+      <div class="features">
+        <div class="feat"><h3>Hero section</h3><p>A bold opening with your name, a short pitch and a reserve button.</p></div>
+        <div class="feat"><h3>Tabbed menu</h3><p>Starters, mains, desserts and drinks with prices. Copy one line to add a dish.</p></div>
+        <div class="feat"><h3>Story and gallery</h3><p>Tell your story and show off your food and space with photo slots.</p></div>
+        <div class="feat"><h3>Guest reviews</h3><p>A section for quotes from happy customers.</p></div>
+        <div class="feat"><h3>Hours, contact and booking</h3><p>Opening hours, address, phone and a table request form you can connect to a free form service.</p></div>
+        <div class="feat"><h3>Easy editing</h3><p>Change every color from one place. A step-by-step guide is included.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Preview</p>
+        <h2>See it on desktop and phone.</h2>
+      </div>
+      <div class="gallery">
+        <div class="shot"><img src="images/p2.jpg" alt="Tabbed menu with prices" loading="lazy" width="1280" height="720"></div>
+        <div class="shot"><img src="images/p4.jpg" alt="Opening hours, contact details and booking form" loading="lazy" width="1280" height="720"></div>
+        <div class="shot"><img src="images/p5.jpg" alt="Template on mobile phones" loading="lazy" width="1280" height="720"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap for">
+      <div>
+        <p class="eyebrow">Who it's for</p>
+        <h2>Made for people who need a site fast.</h2>
+        <p style="color:var(--muted)">If you can edit text in a file and upload a folder, you can launch this template.</p>
+      </div>
+      <ul>
+        <li><strong>Restaurant and caf&eacute; owners</strong> who want an online presence</li>
+        <li><strong>Food trucks and bakeries</strong> that need a simple page</li>
+        <li><strong>Freelancers</strong> building sites for local businesses</li>
+        <li><strong>Beginners</strong> who want a clean base to learn from</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details><summary>What do I get?</summary><p>A zip file with the HTML, CSS and JavaScript files, an images folder, and a README guide that explains every edit step by step.</p></details>
+        <details><summary>Do I need to know how to code?</summary><p>No. You change text, colors and photos in a text editor. The guide shows exactly where.</p></details>
+        <details><summary>Where can I host it?</summary><p>Anywhere that hosts normal websites. The guide lists free options such as Netlify, GitHub Pages and Cloudflare Pages.</p></details>
+        <details><summary>Can I use it for clients?</summary><p>Yes, for your own restaurant or for client projects. Please don't resell or share the template files themselves.</p></details>
+        <details><summary>Does the booking form work right away?</summary><p>It's a ready-made form. To receive requests by email you connect it to a free form service, and the guide shows how.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Launch your restaurant website today.</h2>
+      <p>One payment of $15. Download it, edit it, publish it.</p>
+      <a href="https://kineabw.gumroad.com/l/restaurant-website-templates" class="btn">Buy now</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; Kineab Studios</div></footer>
+
+</body>
+</html>
